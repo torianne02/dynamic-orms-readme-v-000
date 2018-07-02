@@ -11,13 +11,13 @@ puts "song album: " + song.album
 song.save
 
 song = Song.new(name: "First", album: "Hold My Home")
-puts "song name: " + song.name
-puts "song album: " + song.album
+puts "song name 2: " + song.name
+puts "song album 2: " + song.album
 song.save
 
 song = Song.new(name: "Restless", album: "L.A. Divine")
-puts "song name: " + song.name
-puts "song album: " + song.album
+puts "song name 3: " + song.name
+puts "song album 3: " + song.album
 song.save
 
 DB[:conn].execute("SELECT * FROM songs")
